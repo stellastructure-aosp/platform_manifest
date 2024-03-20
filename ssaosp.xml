@@ -1,0 +1,10 @@
+<manifest>
+
+  <remote  name="ssaosp"
+           fetch="https://github.com/stellastructure-aosp"
+           revision="android-14.0.0"
+           clone-depth="1" />
+
+  <project remote="ssaosp" name="platform_manifest" path="manifest" />
+
+</manifest>
