@@ -22,5 +22,6 @@
   </project>
 
   <project remote="ssaosp" name="platform_manifest" path="manifest" />
+  <project remote="ssaosp" name="platform_vendor_aosp" path="vendor/aosp" />
 
 </manifest>
