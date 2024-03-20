@@ -5,6 +5,22 @@
            revision="android-14.0.0"
            clone-depth="1" />
 
+  <remove-project name="platform/build" />
+  <project remote="ssaosp" name="platform_build" path="build/make">
+    <linkfile dest="build/CleanSpec.mk" src="CleanSpec.mk" />
+    <linkfile dest="build/buildspec.mk.default" src="buildspec.mk.default" />
+    <linkfile dest="build/core" src="core" />
+    <linkfile dest="build/envsetup.sh" src="envsetup.sh" />
+    <linkfile dest="build/target" src="target" />
+    <linkfile dest="build/tools" src="tools" />
+  </project>
+
+  <remove-project name="platform/build/soong" />
+  <project remote="ssaosp" name="platform_build_soong" path="build/soong">
+    <linkfile dest="Android.bp" src="root.bp" />
+    <linkfile dest="bootstrap.bash" src="bootstrap.bash" />
+  </project>
+
   <project remote="ssaosp" name="platform_manifest" path="manifest" />
 
 </manifest>
