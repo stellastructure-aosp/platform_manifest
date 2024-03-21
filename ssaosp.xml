@@ -6,7 +6,7 @@
            clone-depth="1" />
 
   <remove-project name="platform/build" />
-  <project remote="ssaosp" name="platform_build" path="build/make">
+  <project remote="ssaosp" name="platform_build" path="build/make" groups="pdk,sysui-studio">
     <linkfile dest="build/CleanSpec.mk" src="CleanSpec.mk" />
     <linkfile dest="build/buildspec.mk.default" src="buildspec.mk.default" />
     <linkfile dest="build/core" src="core" />
@@ -16,12 +16,15 @@
   </project>
 
   <remove-project name="platform/build/soong" />
-  <project remote="ssaosp" name="platform_build_soong" path="build/soong">
+  <project remote="ssaosp" name="platform_build_soong" path="build/soong" groups="pdk,tradefed">
     <linkfile dest="Android.bp" src="root.bp" />
     <linkfile dest="bootstrap.bash" src="bootstrap.bash" />
   </project>
 
-  <project remote="ssaosp" name="platform_manifest" path="manifest" />
-  <project remote="ssaosp" name="platform_vendor_aosp" path="vendor/aosp" />
+  <remove-project name="platform/external/libcxx" />
+  <project remote="ssaosp" name="platform_external_libcxx" path="external/libcxx" groups="pdk" />
+
+  <project remote="ssaosp" name="platform_manifest" path="manifest" groups="pdk" />
+  <project remote="ssaosp" name="platform_vendor_aosp" path="vendor/aosp" groups="pdk,tradefed" />
 
 </manifest>
