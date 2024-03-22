@@ -25,6 +25,7 @@
   <project remote="ssaosp" name="platform_external_libcxx" path="external/libcxx" groups="pdk" />
 
   <project remote="ssaosp" name="platform_manifest" path="manifest" groups="pdk" />
+  <project remote="ssaosp" name="platform_prebuilts_tools-custom" path="prebuilts/tools-custom" groups="pdk,tools,sysui-studio" />
   <project remote="ssaosp" name="platform_vendor_aosp" path="vendor/aosp" groups="pdk,tradefed" />
 
 </manifest>
