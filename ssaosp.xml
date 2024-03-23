@@ -29,6 +29,9 @@
   <remove-project name="platform/external/libcxx" />
   <project remote="ssaosp" name="platform_external_libcxx" path="external/libcxx" groups="pdk" />
 
+  <remove-project name="platform/hardware/qcom/gps" />
+  <project remote="ssaosp" name="platform_hardware_qcom_gps" path="hardware/qcom/gps" groups="qcom,qcom_gps,pdk-qcom" />
+
   <remove-project name="platform/packages/modules/Connectivity" />
   <project remote="ssaosp-bb" name="platform_packages_modules_Connectivity" path="packages/modules/Connectivity" groups="pdk-cw-fs,pdk-fs" />
 
